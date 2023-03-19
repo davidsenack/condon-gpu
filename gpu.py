@@ -18,4 +18,4 @@ for i in range(2, limit):
     if is_prime(i):
         total += 1
 time = t.time() - start
-print('Found %d primes in %f seconds' % (total, time))
+print(f'Found {total} primes in {time} seconds')
