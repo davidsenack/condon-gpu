@@ -1,5 +1,6 @@
 from sys import argv
 import time as t
+import gpu
 
 def is_prime(n):
     factors = 0
@@ -12,7 +13,7 @@ limit = int(argv[1])
 total = 0
 
 start = t.time()
-@par(schedule='dynamic', chunk_size=100, num_threads=16)
+@par(gpu=True)
 for i in range(2, limit):
     if is_prime(i):
         total += 1
