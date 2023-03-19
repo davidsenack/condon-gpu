@@ -1,3 +1,5 @@
+# Note: On Lambda Labs GPU Cloud add the following cli flag: -libdevice /usr/local/lib/libdevice/libdevice.10.bc 
+
 from sys import argv
 import time as t
 import gpu
